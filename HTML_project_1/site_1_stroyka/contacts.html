@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты | СтройПроект</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Связаться с нами</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contacts.html" class="nav-active">Контакты</a></li>
+            <li><a href="https://skyptop.com/dostavka-tekhniki-iz-za-granicy" target="_blank">Доставка техники</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Личные контактные данные</h2>
+
+    <form action="https://www.bing.com/search" method="get" id="contact_form" name="contact_form" target="_blank">
+
+        <p>Запрос: <input type="text" name="q" value="личные данные"></p>
+
+        <p>Фамилия: <input type="text" name="last_name" size="20" value="Иванов" required></p>
+        <p>Имя: <input type="text" name="first_name" size="20" value="Иван" required></p>
+        <p>Группа: <input type="text" name="group" size="20" value="БСТ-21"></p>
+        <p>Мобильный телефон: <input type="text" name="phone" size="20" value="+7-900-000-00-00"></p>
+        <p>Электронка: <input type="text" name="email" size="28" value="you@example.com"></p>
+        <p>Дата отправки сообщения: <input type="date" name="send_date" value="2025-10-18"></p>
+
+        <p>
+            <input type="reset" value="Обновить">
+            <input type="submit" value="Отправить">
+        </p>
+    </form>
+
+    <hr>
+
+    <h2>Заказ строительных работ</h2>
+
+    <form action="https://www.bing.com/search" method="get" id="order_form" name="order_form" target="_blank">
+
+        <p>Запрос: <input type="text" name="q" value="строительство коттеджей"></p>
+
+
+        <p>Объект: <input type="text" name="object_title" size="28" value="Коттедж 180 м²"></p>
+
+
+        <p>Этажей: <input type="number" name="floors" min="1" max="5" value="2"></p>
+
+
+        <p>Тип фундамента:
+            <input type="radio" name="foundation" value="slab" checked> Плита
+            <input type="radio" name="foundation" value="strip"> Ленточный
+            <input type="radio" name="foundation" value="pile"> Свайный
+        </p>
+
+
+        <p>Опции:
+            <input type="checkbox" name="opt_insulation" value="1" checked> Тёплый контур
+            <input type="checkbox" name="opt_heating" value="1"> Отопление
+            <input type="checkbox" name="opt_smart" value="1"> Умный дом
+        </p>
+
+
+        <p>Дата начала работ: <input type="date" name="start_date" value="2025-11-01"></p>
+
+
+        <p>Пароль к личному кабинету:
+            <input type="password" name="portal_password" size="12" value="Default123">
+        </p>
+
+
+        <p>
+            <input type="reset" value="Обновить">
+            <input type="submit" value="Отправить заказ">
+        </p>
+    </form>
+</main>
+
+<footer>
+    <p>© 2025 СтройПроект</p>
+</footer>
+</body>
+</html>
