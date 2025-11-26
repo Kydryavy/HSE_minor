@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты | СтройПроект</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body id="top">
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo-link">
+            <svg class="logo-symbol" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M4 14 L16 4 L28 14 V28 H18 V19 H14 V28 H4 Z"></path>
+            </svg>
+            <span class="logo-text">СтройПроект</span>
+        </a>
+        <nav class="main-nav">
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html" class="nav-active">Контакты</a></li>
+                <li><a href="https://skyptop.com/dostavka-tekhniki-iz-za-granicy">Доставка техники</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="page-main">
+
+    <section id="order-section" class="page-section">
+        <h2>Заказ строительных работ</h2>
+
+        <form action="https://www.bing.com/search" method="get" id="order_form" name="order_form" target="_blank">
+            <p>
+                <label for="order_query">Запрос</label>
+                <input type="text" id="order_query" name="q" value="заказ строительства коттеджа СтройПроект">
+            </p>
+
+            <p>
+                <label for="object_title">Объект строительства</label>
+                <input type="text" id="object_title" name="object_title" value="Коттедж 180 м²">
+            </p>
+
+            <p>
+                <label for="floors">Количество этажей</label>
+                <input type="number" id="floors" name="floors" min="1" max="5" value="2">
+            </p>
+
+            <p>
+                <span>Тип фундамента</span>
+            </p>
+            <p class="form-options-group">
+                <label>
+                    <input type="radio" name="foundation" value="slab" checked>
+                    Плита
+                </label>
+                <label>
+                    <input type="radio" name="foundation" value="strip">
+                    Ленточный
+                </label>
+                <label>
+                    <input type="radio" name="foundation" value="pile">
+                    Свайный
+                </label>
+            </p>
+
+            <p>
+                <span>Дополнительные опции</span>
+            </p>
+            <p class="form-options-group">
+                <label>
+                    <input type="checkbox" name="opt_insulation" value="1" checked>
+                    Тёплый контур
+                </label>
+                <label>
+                    <input type="checkbox" name="opt_heating" value="1">
+                    Отопление
+                </label>
+                <label>
+                    <input type="checkbox" name="opt_smart" value="1">
+                    Умный дом
+                </label>
+            </p>
+
+            <p>
+                <label for="start_date">Дата начала работ</label>
+                <input type="date" id="start_date" name="start_date" value="2025-11-01">
+            </p>
+
+            <div class="form-actions">
+                <button type="reset" class="button button-secondary">Сбросить</button>
+                <button type="submit" class="button button-primary">Отправить заказ</button>
+            </div>
+        </form>
+    </section>
+
+    <a href="#top" class="link-block">К началу</a>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2025 «СтройПроект».</p>
+    </div>
+</footer>
+</body>
+</html>
